@@ -1,0 +1,100 @@
+* {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+    padding: 5px;
+}
+
+.container {
+    display: flex;
+    background-image: linear-gradient(rgb(200, 247, 255),rgb(233, 146, 89));
+    height: fit-content;
+}
+
+nav {
+    padding: 10px;
+    flex: 1 0 275px; 
+    height: 100%;
+}
+
+.search {
+    width: 100%
+}
+
+#searchBar {
+   padding: 2.5px;
+}
+
+#submitBtn {
+    padding: 5px;
+}
+
+#cityList {
+    margin: 10px auto;
+}
+
+.btnContainer {
+    display: flex;
+    margin: 5px auto;
+    padding: 5px;
+    width: 80%;
+}
+
+.cityBtn {
+    width: 100%;
+    padding: 2.5px;
+
+}
+
+.deleteBtn {
+    border-radius: 5px;
+    justify-self: end;
+    font-size: .9rem;
+    margin-left: 5px;
+}
+
+main {
+    width: 100%;
+    padding: 10px;
+    height: 100%;
+}
+
+#currentWeather {
+    margin-bottom: 20px;
+    padding: 5px;
+    text-align: center;
+    border: black solid 1px;
+    background-image: linear-gradient(rgb(205, 227, 235),rgb(40, 163, 207));
+    border-radius: 5px;
+}
+ 
+#fiveDay {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.forcastCard {
+    width: 125px;
+    flex: 1 0 125px;
+    border: black solid 1px;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 2.5px;
+    text-align: center;
+    background-image: linear-gradient(rgb(205, 227, 235),rgb(40, 163, 207));
+}
+
+.uvi {
+    border: solid 1px black;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 5px;
+}
