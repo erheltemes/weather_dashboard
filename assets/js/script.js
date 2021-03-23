@@ -20,7 +20,7 @@ displaySetup(0)
 
 //on submit, save city name to local storage cityList
 submitBtn.on("click", function() {
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${searchBar.val()}&appid=dfe4ebdd4d39c7b24392dc4d6ca41b3c`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${searchBar.val()}&appid=26a1fcb52bf2dfe876ce1f0055e2eaaf`)
 
     .then(function(response) {
         if (response.status === 200) {
@@ -97,7 +97,7 @@ function displayForcast() {
 }      
 
 function displaySetup(index) {
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${localSave[index]}&units=imperial&appid=dfe4ebdd4d39c7b24392dc4d6ca41b3c`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${localSave[index]}&units=imperial&appid=26a1fcb52bf2dfe876ce1f0055e2eaaf`)
     .then(function(response) {
         if (response.status === 200) { 
         return response.json()
@@ -107,7 +107,7 @@ function displaySetup(index) {
     .then(function(data) {
         globalData1 = data
         console.log(globalData1)
-        return fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${data.coord.lat}&lon=${data.coord.lon}&units=imperial&appid=dfe4ebdd4d39c7b24392dc4d6ca41b3c`)
+        return fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${data.coord.lat}&lon=${data.coord.lon}&units=imperial&appid=26a1fcb52bf2dfe876ce1f0055e2eaaf`)
     })
 
     .then(function(response) {
