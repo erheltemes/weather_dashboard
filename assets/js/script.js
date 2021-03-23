@@ -9,18 +9,27 @@ if (localSave === null) {
     localSave = []
 }
 
+apiKey="26a1fcb52bf2dfe876ce1f0055e2eaaf"
+
 //called data temporary globals
 var globalData1 
 var globalData2 
 
 
 propagateCityList()
-
-displaySetup(0)
+console.log(localSave[0])
+if (localSave[0] == undefined) {
+    currentWeather
+        .append($("<h2>").text("Please search a a city to Begin")
+    )
+}
+else {
+    displaySetup(0)
+}
 
 //on submit, save city name to local storage cityList
 submitBtn.on("click", function() {
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${searchBar.val()}&appid=26a1fcb52bf2dfe876ce1f0055e2eaaf`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${searchBar.val()}&appid=${apiKey}`)
 
     .then(function(response) {
         if (response.status === 200) {
@@ -97,17 +106,19 @@ function displayForcast() {
 }      
 
 function displaySetup(index) {
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${localSave[index]}&units=imperial&appid=26a1fcb52bf2dfe876ce1f0055e2eaaf`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${localSave[index]}&appid=${apiKey}`)
     .then(function(response) {
+        console.log(response.status)
         if (response.status === 200) { 
         return response.json()
         }
     })
 
     .then(function(data) {
+        console.log(data)
         globalData1 = data
         console.log(globalData1)
-        return fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${data.coord.lat}&lon=${data.coord.lon}&units=imperial&appid=26a1fcb52bf2dfe876ce1f0055e2eaaf`)
+        return fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${globalData1.coord.lat}&lon=${globalData1.coord.lon}&units=imperial&appid=${apiKey}`)
     })
 
     .then(function(response) {
