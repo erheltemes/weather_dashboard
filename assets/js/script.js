@@ -9,7 +9,7 @@ if (localSave === null) {
     localSave = []
 }
 
-apiKey="26a1fcb52bf2dfe876ce1f0055e2eaaf"
+var apiKey="26a1fcb52bf2dfe876ce1f0055e2eaaf"
 
 //called data temporary globals
 var globalData1 
