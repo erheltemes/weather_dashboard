@@ -8,6 +8,8 @@ No installation needed to run this project, however user should consider user th
 
 ## Usage
 Run locally though index.html, or visit deployed site.
+
+## Screenshot
 Search for a city to recieve weather information, select past seraches, and delete unwanted seraches.
 ![Alt text](./assets/imgs/weather_dashboard.PNG?raw=true "Preview image of Scheduler")
 SITE LINK: https://erheltemes.github.io/weather_dashboard/
