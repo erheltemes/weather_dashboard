@@ -8,7 +8,7 @@ No installation needed to run this project, however user should consider using t
 
 ## Usage
 Run locally through index.html, or visit deployed site.
-Search for a city to recieve weather information, select past searches, and delete unwanted searches.
+Search for a city to receive weather information, select past searches, and delete unwanted searches.
 
 ## Screenshot
 ![Alt text](./assets/imgs/weather_dashboard.PNG?raw=true "Preview image of Scheduler")
