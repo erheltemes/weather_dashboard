@@ -58,7 +58,7 @@ function displayWeather() {
     currentWeather
         .append($("<h2>").text(globalData1.name)
         )
-        .append($("<p>").text(`Date and time at lcoation: ${moment().add(18000 + globalData1.timezone, "s").format('MMMM Do YYYY, h:mm:ss a')}`)
+        .append($("<p>").text(`Date and time at location: ${moment().add(18000 + globalData1.timezone, "s").format('MMMM Do YYYY, h:mm:ss a')}`)
         )
         .append($("<img>").attr("src", `http://openweathermap.org/img/wn/${globalData1.weather[0].icon}@2x.png`)
         )
@@ -99,7 +99,7 @@ function displayForcast() {
             )
             .append($("<p>").text(`Low: ${globalData2.daily[i].temp.min} \u00B0F`)
             )
-            .append($("<p>").text(`Himidity: ${globalData2.daily[i].humidity}%`)
+            .append($("<p>").text(`Humidity: ${globalData2.daily[i].humidity}%`)
             ) 
         )   
     }
