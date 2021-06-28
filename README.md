@@ -7,7 +7,7 @@ App allows user to search a location and view its current weather and 5-day fore
 No installation needed to run this project, however user should consider using their own unique API key from OpenWeather
 
 ## Usage
-Run locally though index.html, or visit deployed site.
+Run locally through index.html, or visit deployed site.
 Search for a city to recieve weather information, select past searches, and delete unwanted searches.
 
 ## Screenshot
