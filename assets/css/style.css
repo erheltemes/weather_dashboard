@@ -16,7 +16,7 @@ p {
 .container {
     display: flex;
     background-image: linear-gradient(rgb(200, 247, 255),rgb(233, 146, 89));
-    height: fit-content;
+    min-height: 100vh;
 }
 
 nav {
