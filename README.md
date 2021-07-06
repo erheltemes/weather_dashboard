@@ -11,5 +11,5 @@ Run locally through index.html, or visit deployed site.
 Search for a city to receive weather information, select past searches, and delete unwanted searches.
 
 ## Screenshot
-![Alt text](./assets/imgs/weather_dashboard.PNG?raw=true "Preview image of Scheduler")
+![Alt text](./assets/imgs/weather_dashboard_screenshot.PNG?raw=true "Preview image of Scheduler")
 SITE LINK: https://erheltemes.github.io/weather_dashboard/
